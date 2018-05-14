@@ -63,6 +63,7 @@
 			<beer>false</beer>
 			<wine>true</wine>
 			<liquor>true</liquor>
+		</alcohol>
 	</country>
 
 	<country id="Croatia">
@@ -104,7 +105,7 @@
 		<sea>true</sea>
 		<alcohol>
 			<beer>true</beer>
-			<wine>true</beer>
+			<wine>true</wine>
 			<liquor>false</liquor>
 		</alcohol>
 	</country>
@@ -132,7 +133,7 @@
 	</country>
 
 	<country id="Ireland">
-		<cheap>false</terrorism>
+		<cheap>false</cheap>
 		<mountains>true</mountains>
 		<sea>true</sea>
 		<alcohol>
