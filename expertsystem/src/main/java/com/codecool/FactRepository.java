@@ -1,6 +1,7 @@
 package com.codecool;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class FactRepository {
@@ -18,6 +19,6 @@ public class FactRepository {
 
 
     public Iterator<Fact> getIterator() {
-        
+
     }
 }
