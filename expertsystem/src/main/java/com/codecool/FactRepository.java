@@ -1,0 +1,23 @@
+package com.codecool;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FactRepository {
+
+    private List<Fact> facts;
+
+    public FactRepository() {
+        this.facts = new ArrayList<>();
+    }
+
+
+    public void addFact(Fact fact) {
+        facts.add(fact);
+    }
+
+
+    public Iterator<Fact> getIterator() {
+        
+    }
+}
