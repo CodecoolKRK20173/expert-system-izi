@@ -1,4 +1,6 @@
-package com.codecool;
+package com.codecool.Iterators;
+
+import com.codecool.Fact;
 
 import java.util.ArrayList;
 import java.util.Iterator;
