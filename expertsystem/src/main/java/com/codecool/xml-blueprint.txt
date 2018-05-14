@@ -54,9 +54,41 @@
 			<liquor>false</liquor>
 		</alcohol>
 	</country>
+	
+	<country id ="Bulgaria">
+		<cheap>true</cheap>
+		<mountains>true</mountains>
+		<sea>true</sea>
+		<alcohol>
+			<beer>false</beer>
+			<wine>true</wine>
+			<liquor>true</liquor>
+	</country>
 
 	<country id="Croatia">
 		<cheap>true</cheap>
+		<mountains>true</mountains>
+		<sea>true</sea>
+		<alcohol>
+			<beer>false</beer>
+			<wine>true</wine>
+			<liquor>true</liquor>
+		</alcohol>
+	</country>
+	
+	<country id="Czech Republic">
+		<cheap>true</cheap>
+		<mountains>true</mountains>
+		<sea>false</sea>
+		<alcohol>
+			<beer>true</beer>
+			<wine>true</wine>
+			<liquor>true</liquor>
+		</alcohol>
+	</country>
+	
+	<country id="France">
+		<cheap>false</cheap>
 		<mountains>true</mountains>
 		<sea>true</sea>
 		<alcohol>
@@ -150,6 +182,17 @@
 		<alcohol>
 			<beer>false</beer>
 			<wine>true</wine>
+			<liquor>true</liquor>
+		</alcohol>
+	</country>
+	
+	<country id="Russia">
+		<cheap>true</cheap>
+		<mountains>false</mountains>
+		<sea>true</sea>
+		<alcohol>
+			<beer>false</beer>
+			<wine>false</wine>
 			<liquor>true</liquor>
 		</alcohol>
 	</country>
