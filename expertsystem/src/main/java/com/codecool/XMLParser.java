@@ -12,13 +12,16 @@ import java.io.IOException;
 
 public abstract class XMLParser {
 
+
+    private Document doc;
+
     public void loadXmlDocument(String xmlPath) {
 
         try {
             File fXmlFile = new File(xmlPath);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(fXmlFile);
+            doc = dBuilder.parse(fXmlFile);
             doc.getDocumentElement().normalize();
 
         } catch (ParserConfigurationException e) {
@@ -28,5 +31,11 @@ public abstract class XMLParser {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+
+    public Document getDocument() {
+        return this.doc;
     }
 }

@@ -3,13 +3,13 @@ package com.codecool;
 public class ESProvider {
 
     private FactParser factParser;
-    private RuleParser ruleParser;
+//    private RuleParser ruleParser;
 
-
-    public ESProvider(FactParser factParser, RuleParser ruleParser) {
-        this.factParser = factParser;
-        this.ruleParser = ruleParser;
-    }
+//
+//    public ESProvider(FactParser factParser, RuleParser ruleParser) {
+//        this.factParser = factParser;
+//        this.ruleParser = ruleParser;
+//    }
 
 
     public void collectAnswers() {
@@ -17,12 +17,12 @@ public class ESProvider {
     }
 
 
-    public boolean getAnswerByQuestion(String questionId) {
-
-    }
-
-
-    public String evaluate() {
-
-    }
+//    public boolean getAnswerByQuestion(String questionId) {
+//
+//    }
+//
+//
+//    public String evaluate() {
+//
+//    }
 }
