@@ -23,4 +23,8 @@ public class FactRepository {
     public Iterator<Fact> getIterator() {
         return new FactIterator(this.facts);
     }
-}
+
+
+    public List<Fact> getFactsList() { return this.facts; }
+
+    }
