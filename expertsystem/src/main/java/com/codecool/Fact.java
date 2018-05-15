@@ -38,4 +38,10 @@ public class Fact {
     public String getDescription() {
         return this.DESCRIPTION;
     }
+
+
+    @Override
+    public String toString() {
+        return String.format("%s %s", ID, DESCRIPTION);
+    }
 }

@@ -11,7 +11,7 @@ public class FactParser extends XMLParser {
     public FactRepository factRepository;
 
 
-    public FactParser(String xmlPath) {
+    public FactParser() {
         this.factRepository = new FactRepository();
     }
 
@@ -22,6 +22,7 @@ public class FactParser extends XMLParser {
         FactRepository factRepository = new FactRepository();
 
         super.loadXmlDocument("Fact.xml");
+        System.out.println("dupa");
         NodeList factList = doc.getElementsByTagName("Fact");
 
         for (int i = 0; i < factList.getLength(); i++) {
