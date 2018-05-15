@@ -8,7 +8,7 @@ import org.w3c.dom.NodeList;
 public class FactParser extends XMLParser {
 
 
-    FactRepository factRepository;
+    public FactRepository factRepository;
 
 
     public FactParser(String xmlPath) {
@@ -18,6 +18,7 @@ public class FactParser extends XMLParser {
 
     public FactRepository getFactRepository() {
 
+        //PARSING DOC INTO REPOSITORY
         FactRepository factRepository = new FactRepository();
 
         super.loadXmlDocument("Fact.xml");
@@ -27,17 +28,12 @@ public class FactParser extends XMLParser {
 
             Node node = factList.item(i);
             Element factElement = (Element) node;
-
-
             NodeList descList = factElement.getElementsByTagName("Description");
-
             Node descriptionNode = descList.item(0);
             Element descriptionElement = (Element) descriptionNode;
             String factId = factElement.getAttribute("id");
             String descriptionValue = descriptionElement.getAttribute("value");
-
             NodeList evalList = factElement.getElementsByTagName("Eval");
-
             Fact fact = new Fact(factId, descriptionValue);
 
             for (int k = 0; k < evalList.getLength(); k++){
@@ -49,6 +45,8 @@ public class FactParser extends XMLParser {
 
                 fact.setFactValueById(evalId, value);
             }
+
+
             factRepository.addFact(fact);
         }
 
