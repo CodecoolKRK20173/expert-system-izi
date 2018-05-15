@@ -13,7 +13,7 @@ import java.io.IOException;
 public abstract class XMLParser {
 
 
-    private Document doc;
+    public Document doc;
 
     public void loadXmlDocument(String xmlPath) {
 
@@ -21,14 +21,10 @@ public abstract class XMLParser {
             File fXmlFile = new File(xmlPath);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            doc = dBuilder.parse(fXmlFile);
-            doc.getDocumentElement().normalize();
+            this.doc = dBuilder.parse(fXmlFile);
+            this.doc.getDocumentElement().normalize();
 
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ParserConfigurationException | IOException | SAXException e) {
             e.printStackTrace();
         }
     }
