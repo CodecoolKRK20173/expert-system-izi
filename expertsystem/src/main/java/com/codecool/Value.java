@@ -22,4 +22,9 @@ public abstract class Value {
     public void setInputPattern(List<String> inputPattern) {
         this.inputPattern = inputPattern;
     }
+
+
+    public void setSelectionType(boolean selectionType) {
+        this.selectionType = selectionType;
+    }
 }
