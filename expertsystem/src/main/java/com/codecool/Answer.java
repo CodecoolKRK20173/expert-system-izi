@@ -27,4 +27,9 @@ public class Answer{
     public List<Value> getValues() {
         return values;
     }
+
+    @Override
+    public String toString() {
+        return values.toString();
+    }
 }

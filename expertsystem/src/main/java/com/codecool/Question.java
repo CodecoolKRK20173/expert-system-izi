@@ -30,4 +30,10 @@ public class Question {
     public Answer getAnswer() {
         return this.answer;
     }
+
+
+    @Override
+    public String toString() {
+        return (id + " " + question + " " + answer.toString());
+    }
 }
