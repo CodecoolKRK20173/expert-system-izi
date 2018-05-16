@@ -12,7 +12,7 @@ public class QuestionIterator implements Iterator<Rule> {
     int indexPosition;
 
 
-    public FactIterator(List<Fact> facts) {
+    public FactIterator(List<Rule> facts) {
         this.rulse = new ArrayList<>();
         this.indexPosition = 0;
     }
