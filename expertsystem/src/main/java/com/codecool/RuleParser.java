@@ -4,6 +4,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import java.util.Arrays;
+
 
 public class RuleParser extends XMLParser {
 
@@ -44,16 +46,18 @@ public class RuleParser extends XMLParser {
                 NodeList answerValues = selection.getChildNodes();
                 for (int k = 0; k < answerValues.getLength(); k++) {
                     Node answerNode = answerValues.item(k);
+                    Element answerValue = (Element) answerNode;
+                    String valueType = answerValue.getTagName();
 
-                        Element answerValue = (Element) answerNode;
-                        String valueType = answerValue.getTagName();
+                    if (valueType.equals("SingleValue")) {
+                        answer.addValue(new SingleValue(answerValue.getAttribute("value"), selectionValue));
+                    } else if (valueType.equals("MultipleValue")) {
+                        String[] values = answerValue.getAttribute("value").split(", ");
+                        answer.addValue(new MultipleValue(Arrays.asList(values), selectionValue));
+                    }
 
-                        if (valueType.equals("SingleValue")) {
-                            answer.addValue(new SingleValue(answerValue.getAttribute("value"), selectionValue));
-                        } else if (valueType.equals("MultipleValue")) {
-                            String[] values = answerValue.getAttribute("value").split(", ");
-                            answer.addValue(new MultipleValue(Arrays.asList(values), selectionValue));
-                        }
+
+
 
 
 
