@@ -1,15 +1,20 @@
 package com.codecool;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ESProvider {
 
-    private FactParser factParser;
-//    private RuleParser ruleParser;
+    private FactRepository factRepository;
+    private RuleRepository ruleRepository;
+    private Map<String, Boolean> answers;
 
-//
-//    public ESProvider(FactParser factParser, RuleParser ruleParser) {
-//        this.factParser = factParser;
-//        this.ruleParser = ruleParser;
-//    }
+    public ESProvider(FactParser factParser, RuleParser ruleParser) {
+        this.factRepository = factParser.getFactRepository();
+        this.ruleRepository = ruleParser.getRuleRepository();
+        this.answers = new HashMap<>();
+
+    }
 
 
     public void collectAnswers() {
@@ -17,12 +22,12 @@ public class ESProvider {
     }
 
 
-//    public boolean getAnswerByQuestion(String questionId) {
-//
-//    }
-//
-//
-//    public String evaluate() {
-//
-//    }
+    public boolean getAnswerByQuestion(String questionId) {
+
+    }
+
+
+    public String evaluate() {
+
+    }
 }
