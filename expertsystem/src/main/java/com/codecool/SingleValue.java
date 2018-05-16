@@ -11,8 +11,4 @@ public class SingleValue extends Value{
         super.selectionType=selectionType;
     }
 
-    @Override
-    public String toString() {
-        return String.format("%s %b", inputPattern.get(0), selectionType);
-    }
 }
