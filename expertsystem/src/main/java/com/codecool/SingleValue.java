@@ -2,13 +2,14 @@ package com.codecool;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SingleValue extends Value{
 
     public SingleValue(String param, boolean selectionType){
-        super.inputPattern= new ArrayList<>(1);
-        super.inputPattern.add(param);
-        super.selectionType=selectionType;
+        List<String> params = new ArrayList<>();
+        params.add(param);
+        super.selectionType = selectionType;
     }
 
 }
