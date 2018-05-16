@@ -22,21 +22,27 @@ public class FactParser extends XMLParser {
         FactRepository factRepository = new FactRepository();
 
         super.loadXmlDocument("Fact.xml");
-        System.out.println("dupa");
+
+
         NodeList factList = doc.getElementsByTagName("Fact");
 
+        // iterate over facts
         for (int i = 0; i < factList.getLength(); i++) {
 
             Node node = factList.item(i);
             Element factElement = (Element) node;
+
             NodeList descList = factElement.getElementsByTagName("Description");
             Node descriptionNode = descList.item(0);
             Element descriptionElement = (Element) descriptionNode;
             String factId = factElement.getAttribute("id");
+
+            //vreate fact
             String descriptionValue = descriptionElement.getAttribute("value");
             NodeList evalList = factElement.getElementsByTagName("Eval");
             Fact fact = new Fact(factId, descriptionValue);
 
+            // iteratae over evals
             for (int k = 0; k < evalList.getLength(); k++){
                 Node evalNode = evalList.item(k);
                 Element evalElement = (Element) evalNode;
