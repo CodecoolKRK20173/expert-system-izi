@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5063c66b-73e7-4a50-970d-fec3fa5e6a9c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/MultipleValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/MultipleValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Value.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,25 +16,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MultipleValue.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MultipleValue.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/MultipleValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            <state relative-caret-position="136">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Value.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Value.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Value.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="119">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
               <folding>
                 <element signature="e#196#197#0" expanded="true" />
                 <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +47,11 @@
       <file leaf-file-name="SingleValue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/SingleValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="204">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,6 +89,8 @@
         <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleRepository.java" />
         <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleParser.java" />
         <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Value.java" />
+        <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/SingleValue.java" />
+        <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/MultipleValue.java" />
       </list>
     </option>
   </component>
@@ -216,6 +226,35 @@
       <option name="presentableId" value="Default" />
       <updated>1526381684579</updated>
     </task>
+    <task id="LOCAL-00001" summary="(Intellij first commit) Delete toString()">
+      <created>1526494321928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526494321929</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Create setInputPattern">
+      <created>1526494529484</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526494529484</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create setSelectionType()">
+      <created>1526494834444</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1526494834444</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Change SingleValue constructor">
+      <created>1526495144840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526495144840</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -271,6 +310,13 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="(Intellij first commit) Delete toString()" />
+    <MESSAGE value="Create setInputPattern" />
+    <MESSAGE value="Create setSelectionType()" />
+    <MESSAGE value="Change SingleValue constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change SingleValue constructor" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Fact.java">
@@ -390,13 +436,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/MultipleValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -515,6 +557,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -596,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/SingleValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -629,14 +668,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Value.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="119">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding>
             <element signature="e#196#197#0" expanded="true" />
             <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/SingleValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/MultipleValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>

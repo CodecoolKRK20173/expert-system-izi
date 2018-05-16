@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class Value {
 
-    private boolean selectionType;
+    public boolean selectionType;
     private List<String> inputPattern;
 
 
