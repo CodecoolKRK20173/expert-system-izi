@@ -18,7 +18,7 @@ public class RuleParser extends XMLParser {
     }
 
 
-    public void getRuleRepository() {
+    public RuleRepository getRuleRepository() {
         RuleRepository ruleRepository = new RuleRepository();
         super.loadXmlDocument("Rules.xml");
 
