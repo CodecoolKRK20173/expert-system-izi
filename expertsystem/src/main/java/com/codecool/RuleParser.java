@@ -68,6 +68,8 @@ public class RuleParser extends XMLParser {
             String questionString = questionNodeList.item(0).getTextContent();
 
             Question question = new Question(id, questionString, answer);
+
+            ruleRepository.addQuestion(question);
         }
     }
 }
