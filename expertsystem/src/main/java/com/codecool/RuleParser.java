@@ -34,10 +34,6 @@ public class RuleParser extends XMLParser {
             String id = ((Element) node).getAttribute("id");
             String questionString = questionNodeList.item(0).getTextContent();
             Answer answer = new Answer();
-
-//            Value singleValue = new SingleValue()
-//            answer.addValue();
-//            ruleRepository.addQuestion(question);
         }
     }
 }
