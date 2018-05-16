@@ -46,30 +46,30 @@ public class RuleParser extends XMLParser {
                 NodeList answerValues = selection.getChildNodes();
                 for (int k = 0; k < answerValues.getLength(); k++) {
                     Node answerNode = answerValues.item(k);
-                    Element answerValue = (Element) answerNode;
-                    String valueType = answerValue.getTagName();
+                    if (answerNode.getNodeType() == Node.ELEMENT_NODE) {
+                        Element answerValue = (Element) answerNode;
+                        String valueType = answerValue.getTagName();
 
-                    if (valueType.equals("SingleValue")) {
-                        answer.addValue(new SingleValue(answerValue.getAttribute("value"), selectionValue));
-                    } else if (valueType.equals("MultipleValue")) {
-                        String[] values = answerValue.getAttribute("value").split(", ");
-                        answer.addValue(new MultipleValue(Arrays.asList(values), selectionValue));
+                        if (valueType.equals("SingleValue")) {
+                            answer.addValue(new SingleValue(answerValue.getAttribute("value"), selectionValue));
+                        } else if (valueType.equals("MultipleValue")) {
+                            String[] values = answerValue.getAttribute("value").split(", ");
+                            answer.addValue(new MultipleValue(Arrays.asList(values), selectionValue));
+                        }
                     }
 
 
 
 
+                        // create question
+                    String id = ((Element) node).getAttribute("id");
+                    String questionString = questionNodeList.item(0).getTextContent();
 
+                    Question question = new Question(id, questionString, answer);
 
-
-
-            // create question
-            String id = ((Element) node).getAttribute("id");
-            String questionString = questionNodeList.item(0).getTextContent();
-
-            Question question = new Question(id, questionString, answer);
-
-            ruleRepository.addQuestion(question);
+                    ruleRepository.addQuestion(question);
+                }
+            }
         }
     }
 }
