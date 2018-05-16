@@ -15,4 +15,19 @@ public class Question {
     public boolean getEvaluatedAnswer(String input){
         return answer.evaluateAnswerByInput(input);
     }
+
+
+    public String getId() {
+        return this.id;
+    }
+
+
+    public String getQuestion() {
+        return this.question;
+    }
+
+
+    public Answer getAnswer() {
+        return this.answer;
+    }
 }
