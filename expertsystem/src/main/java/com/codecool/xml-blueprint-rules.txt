@@ -1,0 +1,74 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes"?>
+<Rules>
+    <Rule id= "cheap">
+        <Question>Would you like to travel cheap?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+
+    <Rule id= "mountains">
+        <Question>Do you like mountains?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+
+    <Rule id= "sea">
+        <Question>Do you like the sea breeze?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+
+    <Rule id= "beer">
+        <Question>Do you like beer?</Question>
+        <Answer>
+                <Selection value="true">
+                    <SingleValue value="yes"/>
+                </Selection>
+                <Selection value="false">
+                    <SingleValue value="no"/>
+                </Selection>
+        </Answer>
+    </Rule>
+
+    <Rule id= "wine">
+        <Question>Do you like wine?</Question>
+        <Answer>
+                <Selection value="true">
+                    <SingleValue value="yes"/>
+                </Selection>
+                <Selection value="false">
+                    <SingleValue value="no"/>
+                </Selection>
+        </Answer>
+    </Rule>
+
+        <Rule id= "liquor">
+        <Question>Do you like liquor?</Question>
+        <Answer>
+                <Selection value="true">
+                    <SingleValue value="yes"/>
+                </Selection>
+                <Selection value="false">
+                    <SingleValue value="no"/>
+                </Selection>
+        </Answer>
+    </Rule>
+</Rules>
