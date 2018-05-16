@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5063c66b-73e7-4a50-970d-fec3fa5e6a9c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/main/com/codecool/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/codecool/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/QuestionIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/QuestionIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/codecool/FactParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/codecool/FactParser.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,32 +19,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.4808642">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/App.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="QuestionIterator.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/QuestionIterator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RuleParser.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="RuleParser.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleParser.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+                <state relative-caret-position="411">
+                  <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="39" selection-end-column="51" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#221#222#0" expanded="true" />
@@ -49,11 +36,25 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FactIterator.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/FactIterator.java">
+          <file leaf-file-name="Answer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Answer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="2" lean-forward="true" selection-end-line="34" selection-end-column="1" />
+                <state relative-caret-position="68">
+                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RuleRepository.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#432#433#0" expanded="true" />
+                    <element signature="e#491#492#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -62,11 +63,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="FactParser.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/FactParser.java">
+          <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/App.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="657">
-                  <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+                <state relative-caret-position="102">
+                  <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FactRepository.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/FactRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -74,15 +84,32 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Fact.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Fact.java">
+          <file leaf-file-name="SingleValue.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/SingleValue.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="27" selection-end-column="35" />
+                <state relative-caret-position="85">
+                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FactParser.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/FactParser.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="56" column="26" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="26" />
                   <folding>
-                    <element signature="e#786#787#0" expanded="true" />
-                    <element signature="e#848#849#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Question.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Question.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -98,6 +125,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>rule</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -108,9 +140,13 @@
         <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/XMLParser.java" />
         <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/FactRepository.java" />
         <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Fact.java" />
-        <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/App.java" />
         <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/FactParser.java" />
+        <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Question.java" />
+        <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Rule.java" />
         <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/QuestionIterator.java" />
+        <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/App.java" />
+        <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/RuleRepository.java" />
+        <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleRepository.java" />
         <option value="$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleParser.java" />
       </list>
     </option>
@@ -255,17 +291,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32968238" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36582693" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36582693" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14427084" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -278,7 +315,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32968238" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -396,67 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/FactRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/FactIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/QuestionIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/FactParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Fact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -464,6 +439,136 @@
           <folding>
             <element signature="e#786#787#0" expanded="true" />
             <element signature="e#848#849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Rule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/FactIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/QuestionIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/XMLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/org/w3c/dom/NodeList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/org/w3c/dom/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9965">
+          <caret line="164" column="17" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/FactParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Iterators/RuleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/FactRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/SingleValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/expertsystem/src/main/java/com/codecool/RuleParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="39" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
           </folding>
         </state>
       </provider>

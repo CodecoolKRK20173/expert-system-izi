@@ -1,19 +1,19 @@
 package com.codecool.Iterators;
 
-import com.codecool.Fact;
+import com.codecool.Question;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class QuestionIterator implements Iterator<Rule> {
+public class QuestionIterator implements Iterator<Question> {
 
-    private List<Rule> rules;
+    private List<Question> rules;
     int indexPosition;
 
 
-    public FactIterator(List<Rule> facts) {
-        this.rulse = new ArrayList<>();
+    public QuestionIterator(List<Question> rules) {
+        this.rules = new ArrayList<>();
         this.indexPosition = 0;
     }
 
@@ -29,7 +29,7 @@ public class QuestionIterator implements Iterator<Rule> {
 
 
     @Override
-    public Rule next() {
-        return this.rulse.get(indexPosition++);
+    public Question next() {
+        return this.rules.get(indexPosition++);
     }
 }
