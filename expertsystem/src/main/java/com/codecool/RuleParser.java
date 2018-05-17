@@ -31,7 +31,7 @@ public class RuleParser extends XMLParser {
             Element ruleElement = (Element) node;
             NodeList questionNodeList = ruleElement.getElementsByTagName("Question");
 
-            //create answer//////////////
+//          create answer
 
             Answer answer = new Answer();
             Element answerTag = (Element) rule.getElementsByTagName("Answer").item(0);
@@ -55,8 +55,6 @@ public class RuleParser extends XMLParser {
                         } else {
                             answer.addValue(new MultipleValue(answerElement.getAttribute("value"), selectionValue));
                         }
-                        System.out.println(answerElement.getTagName());
-                        // add single value
                     }
                 }
                 // create question and add to ruleRepository
