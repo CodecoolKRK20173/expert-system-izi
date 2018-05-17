@@ -44,4 +44,8 @@ public class Fact {
     public String toString() {
         return String.format("%s %s", ID, DESCRIPTION);
     }
+
+    public Map<String, Boolean> getValueId() {
+        return valueId;
+    }
 }

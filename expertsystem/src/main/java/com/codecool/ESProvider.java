@@ -47,16 +47,22 @@ public class ESProvider {
         return scanner.nextLine();
     }
 
+
     public void evaluate() {
         Iterator<Fact> factIterator = this.factRepository.getIterator();
+
         while (factIterator.hasNext()) {
             Fact fact = factIterator.next();
             Set<String> factIdsSet = fact.getSetId();
+            int matches = 0;
 
             for (String id : factIdsSet) {
-                if (this.answers.get(id).equals(fact.getValueById(id)))
-                    System.out.println(fact.getDescription());
+                if (this.answers.get(id).equals(fact.getValueId().get(id)))
+                    matches++;
             }
+
+            if(factIdsSet.size() == 3)
+                System.out.println(fact.getDescription());
         }
     }
 }
