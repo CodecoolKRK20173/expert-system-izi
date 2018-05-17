@@ -13,15 +13,16 @@ public class Answer{
     }
 
     public boolean evaluateAnswerByInput(String input) throws IllegalArgumentException {
-//        System.out.println(values);
+
         for (Value value : values) {
-            System.out.println(value.getInputPattern()+ " | " + value.getSelectionType());
+
             for (String word : value.getInputPattern()) {
-                if (word.equals(input)) {
+
+                if (word.equals(input))
                     return value.getSelectionType();
-                }
             }
         }
+
         throw new IllegalArgumentException();
     }
 

@@ -10,10 +10,11 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 
+
 public abstract class XMLParser {
 
-
     public Document doc;
+
 
     public void loadXmlDocument(String xmlPath) {
 
@@ -28,7 +29,6 @@ public abstract class XMLParser {
             e.printStackTrace();
         }
     }
-
 
 
     public Document getDocument() {
