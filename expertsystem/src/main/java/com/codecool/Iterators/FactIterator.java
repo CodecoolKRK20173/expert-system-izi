@@ -13,7 +13,7 @@ public class FactIterator implements Iterator<Fact> {
 
 
     public FactIterator(List<Fact> facts) {
-        this.facts = new ArrayList<>();
+        this.facts = facts;
         this.indexPosition = 0;
     }
 
