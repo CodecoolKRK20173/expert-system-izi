@@ -12,8 +12,13 @@ public class Question {
         this.answer = answer;
     }
 
-    public boolean getEvaluatedAnswer(String input){
-        return answer.evaluateAnswerByInput(input);
+    public Boolean getEvaluatedAnswer(String input)
+    {
+        try {
+            return answer.evaluateAnswerByInput(input);
+        } catch (IllegalArgumentException e){
+        }
+        return null;
     }
 
 

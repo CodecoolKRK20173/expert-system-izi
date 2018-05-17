@@ -19,12 +19,27 @@ public class ESProvider {
         Question question;
         this.answers = new HashMap<>();
 
+
+
+
         while (questionIterator.hasNext()) {
             question = questionIterator.next();
-            System.out.println(questionIterator.next().getQuestion());
+            question = questionIterator.next();
+//            System.out.println(questionIterator.next().getQuestion());
 
-            String userInput = getUserAnswer();
-            this.answers.put(question.getId(), question.getEvaluatedAnswer(userInput));
+
+            boolean x = false;
+
+            while(!x){
+                System.out.println(question.getQuestion());
+                String userInput = getUserAnswer();
+                Boolean answ = question.getEvaluatedAnswer(userInput);
+                if(answ != null){
+                    x=true;
+                    this.answers.put(question.getId(), question.getEvaluatedAnswer(userInput));
+                }
+
+            }
         }
 
         System.out.println(answers);
