@@ -61,7 +61,7 @@ public class ESProvider {
                     matches++;
             }
 
-            if(factIdsSet.size() == 3)
+            if(matches == factIdsSet.size())
                 System.out.println(fact.getDescription());
         }
     }
