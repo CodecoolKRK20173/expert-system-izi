@@ -12,30 +12,24 @@ public class Fact {
     private Map<String, Boolean> valueId;
 
 
-    public Fact(String id, String description) {
+    Fact(String id, String description) {
         this.ID = id;
         this.DESCRIPTION = description;
         this.valueId = new HashMap<>();
     }
 
 
-    public Set<String> getSetId() {
+    Set<String> getSetId() {
         return this.valueId.keySet();
     }
 
 
-    public void setFactValueById(String id, boolean value) {
+    void setFactValueById(String id, boolean value) {
         this.valueId.put(id, value);
     }
+    
 
-
-    public boolean getValueById(String id) {
-        return this.valueId.get(id);
-
-    }
-
-
-    public String getDescription() {
+    String getDescription() {
         return this.DESCRIPTION;
     }
 
@@ -45,7 +39,8 @@ public class Fact {
         return String.format("%s %s", ID, DESCRIPTION);
     }
 
-    public Map<String, Boolean> getValueId() {
+
+    Map<String, Boolean> getValueId() {
         return valueId;
     }
 }

@@ -2,14 +2,14 @@ package com.codecool.Iterators;
 
 import com.codecool.Fact;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
 
 public class FactIterator implements Iterator<Fact> {
 
     private List<Fact> facts;
-    int indexPosition;
+    private int indexPosition;
 
 
     public FactIterator(List<Fact> facts) {
