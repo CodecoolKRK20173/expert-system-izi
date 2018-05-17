@@ -9,12 +9,10 @@ public class ESProvider {
     private Map<String, Boolean> answers;
 
 
-    
     public ESProvider(FactParser factParser, RuleParser ruleParser) {
         this.factRepository = factParser.getFactRepository();
         this.ruleRepository = ruleParser.getRuleRepository();
     }
-
 
     public void collectAnswers() {
         Iterator<Question> questionIterator = ruleRepository.getIterator();
@@ -22,8 +20,7 @@ public class ESProvider {
         this.answers = new HashMap<>();
 
         while (questionIterator.hasNext()) {
-            question = questionIterator.next();
-            question = questionIterator.next();
+            question = getQuestion(questionIterator);
 
             boolean isAnswerCorrect = false;
 
@@ -41,15 +38,21 @@ public class ESProvider {
         System.out.println(answers);
     }
 
+    private Question getQuestion(Iterator<Question> questionIterator) {
+        Question question;
+        question = questionIterator.next();
+        question = questionIterator.next();
+        return question;
+    }
 
     public String getUserAnswer() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
 
-
     public void evaluate() {
         Iterator<Fact> factIterator = this.factRepository.getIterator();
+        boolean isMatch = false;
 
         while (factIterator.hasNext()) {
             Fact fact = factIterator.next();
@@ -61,8 +64,13 @@ public class ESProvider {
                     matches++;
             }
 
-            if(matches == factIdsSet.size())
+            if(matches == factIdsSet.size()) {
+                isMatch = true;
                 System.out.println(fact.getDescription());
+            }
         }
+
+        if(!isMatch)
+            System.out.println("Match not found");
     }
 }
