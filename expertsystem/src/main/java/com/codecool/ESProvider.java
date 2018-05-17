@@ -2,19 +2,21 @@ package com.codecool;
 
 import java.util.*;
 
-public class ESProvider {
+
+class ESProvider {
 
     private FactRepository factRepository;
     private RuleRepository ruleRepository;
     private Map<String, Boolean> answers;
 
 
-    public ESProvider(FactParser factParser, RuleParser ruleParser) {
+    ESProvider(FactParser factParser, RuleParser ruleParser) {
         this.factRepository = factParser.getFactRepository();
         this.ruleRepository = ruleParser.getRuleRepository();
     }
 
-    public void collectAnswers() {
+
+    void collectAnswers() {
         Iterator<Question> questionIterator = ruleRepository.getIterator();
         Question question;
         this.answers = new HashMap<>();
@@ -24,33 +26,38 @@ public class ESProvider {
 
             boolean isAnswerCorrect = false;
 
-            while(!isAnswerCorrect) {
+            while (!isAnswerCorrect) {
                 System.out.println(question.getQuestion());
                 String userInput = getUserAnswer();
                 Boolean evaluatedAnswer = question.getEvaluatedAnswer(userInput);
 
-                if(evaluatedAnswer != null){
+                if (evaluatedAnswer != null) {
                     isAnswerCorrect = true;
                     this.answers.put(question.getId(), question.getEvaluatedAnswer(userInput));
                 }
             }
         }
+
         System.out.println(answers);
     }
+
 
     private Question getQuestion(Iterator<Question> questionIterator) {
         Question question;
         question = questionIterator.next();
         question = questionIterator.next();
+
         return question;
     }
 
-    public String getUserAnswer() {
+
+    private String getUserAnswer() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
 
-    public void evaluate() {
+
+    void evaluate() {
         Iterator<Fact> factIterator = this.factRepository.getIterator();
         boolean isMatch = false;
 
@@ -64,13 +71,13 @@ public class ESProvider {
                     matches++;
             }
 
-            if(matches == factIdsSet.size()) {
+            if (matches == factIdsSet.size()) {
                 isMatch = true;
                 System.out.println(fact.getDescription());
             }
         }
 
-        if(!isMatch)
+        if (!isMatch)
             System.out.println("Match not found");
     }
 }

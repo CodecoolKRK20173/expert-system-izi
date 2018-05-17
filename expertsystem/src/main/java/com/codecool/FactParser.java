@@ -5,45 +5,37 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 
-public class FactParser extends XMLParser {
+class FactParser extends XMLParser {
 
 
-    public FactRepository factRepository;
+    private FactRepository factRepository;
 
 
-    public FactParser() {
+    FactParser() {
         this.factRepository = new FactRepository();
     }
 
 
-    public FactRepository getFactRepository() {
+    FactRepository getFactRepository() {
 
-        //PARSING DOC INTO REPOSITORY
         FactRepository factRepository = new FactRepository();
 
         super.loadXmlDocument("Fact.xml");
-
-
         NodeList factList = doc.getElementsByTagName("Fact");
 
-        // iterate over facts
         for (int i = 0; i < factList.getLength(); i++) {
 
             Node node = factList.item(i);
             Element factElement = (Element) node;
-
             NodeList descList = factElement.getElementsByTagName("Description");
             Node descriptionNode = descList.item(0);
             Element descriptionElement = (Element) descriptionNode;
             String factId = factElement.getAttribute("id");
-
-            //vreate fact
             String descriptionValue = descriptionElement.getAttribute("value");
             NodeList evalList = factElement.getElementsByTagName("Eval");
             Fact fact = new Fact(factId, descriptionValue);
 
-            // iteratae over evals
-            for (int k = 0; k < evalList.getLength(); k++){
+            for (int k = 0; k < evalList.getLength(); k++) {
                 Node evalNode = evalList.item(k);
                 Element evalElement = (Element) evalNode;
                 String evalText = evalElement.getTextContent();
@@ -52,7 +44,6 @@ public class FactParser extends XMLParser {
 
                 fact.setFactValueById(evalId, value);
             }
-
 
             factRepository.addFact(fact);
         }

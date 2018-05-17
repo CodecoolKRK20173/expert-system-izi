@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Answer{
+public class Answer {
 
     private List<Value> values = new ArrayList<>();
 
 
-    void addValue(Value value){
+    void addValue(Value value) {
         this.values.add(value);
     }
 

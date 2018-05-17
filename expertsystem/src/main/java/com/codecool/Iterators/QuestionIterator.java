@@ -11,7 +11,7 @@ public class QuestionIterator implements Iterator<Question> {
     private int index;
     private List<Question> questions;
 
-    
+
     public QuestionIterator(ArrayList<Question> questions) {
         this.index = 0;
         this.questions = questions;
