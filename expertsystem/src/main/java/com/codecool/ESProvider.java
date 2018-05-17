@@ -8,6 +8,8 @@ public class ESProvider {
     private RuleRepository ruleRepository;
     private Map<String, Boolean> answers;
 
+
+    
     public ESProvider(FactParser factParser, RuleParser ruleParser) {
         this.factRepository = factParser.getFactRepository();
         this.ruleRepository = ruleParser.getRuleRepository();
