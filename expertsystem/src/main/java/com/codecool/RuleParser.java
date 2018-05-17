@@ -47,8 +47,16 @@ public class RuleParser extends XMLParser {
 
                     if (answerNode.getNodeType() == Node.ELEMENT_NODE) {
                         Element answerElement = (Element) answerNode;
+
+//                      Select SingleValue or MultipleValue
+
+                        if(answerElement.getTagName().equals("SingleValue")){
+                            answer.addValue(new SingleValue(answerElement.getAttribute("value"), selectionValue));
+                        } else {
+                            answer.addValue(new MultipleValue(answerElement.getAttribute("value"), selectionValue));
+                        }
+                        System.out.println(answerElement.getTagName());
                         // add single value
-                        answer.addValue(new SingleValue(answerElement.getAttribute("value"), selectionValue));
                     }
                 }
                 // create question and add to ruleRepository
