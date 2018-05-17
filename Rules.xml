@@ -13,7 +13,7 @@
     </Rule>
     ...
     <Rule id="comfort">
-        <Question>What is more important for you?</Question>
+        <Question>What is more important for you?(comfort/speed)</Question>
         <Answer>
             <Selection value="true">
                 <SingleValue value="comfort"/>
@@ -25,7 +25,7 @@
     </Rule>
     ...
     <Rule id="luxury">
-        <Question>What feature is must-have for you?</Question>
+        <Question>What feature is must-have for you(gps,bluetooth,dvd,automatic transmission,self-driving,nothing,abs,fog lights,central lock?</Question>
         <Answer>
             <Selection value="true">
                 <MultipleValue value="gps,bluetooth,dvd,automatic transmission,self-driving"/>
