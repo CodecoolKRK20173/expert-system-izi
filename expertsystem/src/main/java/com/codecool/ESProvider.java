@@ -21,29 +21,23 @@ public class ESProvider {
         Question question;
         this.answers = new HashMap<>();
 
-
-
-
         while (questionIterator.hasNext()) {
             question = questionIterator.next();
             question = questionIterator.next();
-//            System.out.println(questionIterator.next().getQuestion());
 
+            boolean isAnswerCorrect = false;
 
-            boolean x = false;
-
-            while(!x){
+            while(!isAnswerCorrect) {
                 System.out.println(question.getQuestion());
                 String userInput = getUserAnswer();
-                Boolean answ = question.getEvaluatedAnswer(userInput);
-                if(answ != null){
-                    x=true;
+                Boolean evaluatedAnswer = question.getEvaluatedAnswer(userInput);
+
+                if(evaluatedAnswer != null){
+                    isAnswerCorrect = true;
                     this.answers.put(question.getId(), question.getEvaluatedAnswer(userInput));
                 }
-
             }
         }
-
         System.out.println(answers);
     }
 
