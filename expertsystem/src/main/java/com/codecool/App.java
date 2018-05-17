@@ -3,7 +3,8 @@ package com.codecool;
 public class App {
 
     public static void main(String[] args) {
-        RuleParser rp = new RuleParser();
-        rp.getRuleRepository();
+        ESProvider expertSystem = new ESProvider(new FactParser(), new RuleParser());
+        expertSystem.collectAnswers();
+        expertSystem.evaluate();
     }
 }

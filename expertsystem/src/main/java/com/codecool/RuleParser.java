@@ -30,46 +30,35 @@ public class RuleParser extends XMLParser {
 
             Element ruleElement = (Element) node;
             NodeList questionNodeList = ruleElement.getElementsByTagName("Question");
-            System.out.println("id = " + ((Element) node).getAttribute("id"));
-            System.out.println("question = " + questionNodeList.item(0).getTextContent());
-
 
             //create answer//////////////
 
             Answer answer = new Answer();
             Element answerTag = (Element) rule.getElementsByTagName("Answer").item(0);
             NodeList selectionValues = answerTag.getElementsByTagName("Selection");
+
             for (int j = 0; j < selectionValues.getLength(); j++) {
                 Element selection = (Element) selectionValues.item(j);
                 boolean selectionValue = Boolean.valueOf(selection.getAttribute("value"));
-
                 NodeList answerValues = selection.getChildNodes();
+
                 for (int k = 0; k < answerValues.getLength(); k++) {
                     Node answerNode = answerValues.item(k);
+
                     if (answerNode.getNodeType() == Node.ELEMENT_NODE) {
-                        Element answerValue = (Element) answerNode;
-                        String valueType = answerValue.getTagName();
-
-                        if (valueType.equals("SingleValue")) {
-                            answer.addValue(new SingleValue(answerValue.getAttribute("value"), selectionValue));
-                        } else if (valueType.equals("MultipleValue")) {
-                            String[] values = answerValue.getAttribute("value").split(", ");
-                            answer.addValue(new MultipleValue(Arrays.asList(values), selectionValue));
-                        }
+                        Element answerElement = (Element) answerNode;
+                        // add single value
+                        answer.addValue(new SingleValue(answerElement.getAttribute("value"), selectionValue));
                     }
-
-
-
-
-                        // create question
-                    String id = ((Element) node).getAttribute("id");
-                    String questionString = questionNodeList.item(0).getTextContent();
-
-                    Question question = new Question(id, questionString, answer);
-
-                    ruleRepository.addQuestion(question);
                 }
+                // create question and add to ruleRepository
+                String id = ((Element) node).getAttribute("id");
+                String questionString = questionNodeList.item(0).getTextContent();
+                Question question = new Question(id, questionString, answer);
+                ruleRepository.addQuestion(question);
             }
         }
+
+        return ruleRepository;
     }
 }

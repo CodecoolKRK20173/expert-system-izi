@@ -1,5 +1,6 @@
 package com.codecool;
 
+
 import com.codecool.Iterators.QuestionIterator;
 
 import java.util.ArrayList;
@@ -8,9 +9,12 @@ import java.util.Iterator;
 
 public class RuleRepository {
     private List<Question> questions;
+    private Iterator<Question> questionIterator;
+
 
     public RuleRepository() {
         this.questions = new ArrayList<>();
+        this.questionIterator = new QuestionIterator((ArrayList<Question>) questions);
     }
 
 
@@ -20,7 +24,11 @@ public class RuleRepository {
 
 
     public Iterator<Question> getIterator() {
-        return new QuestionIterator(this.questions);
+
+        QuestionIterator qi = new QuestionIterator((ArrayList<Question>) questions);
+
+
+        return this.questionIterator;
     }
 
 

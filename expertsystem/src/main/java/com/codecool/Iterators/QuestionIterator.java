@@ -2,34 +2,33 @@ package com.codecool.Iterators;
 
 import com.codecool.Question;
 
-import java.util.ArrayList;
 import java.util.Iterator;
+
+
+import com.codecool.Question;
+
+import java.util.ArrayList;
 import java.util.List;
 
+
 public class QuestionIterator implements Iterator<Question> {
+    private int index;
+    private List<Question> questions;
 
-    private List<Question> rules;
-    int indexPosition;
-
-
-    public QuestionIterator(List<Question> rules) {
-        this.rules = new ArrayList<>();
-        this.indexPosition = 0;
+    public QuestionIterator(ArrayList<Question> questions) {
+        this.index = 0;
+        this.questions = questions;
     }
 
 
     @Override
     public boolean hasNext() {
-        if(this.rules.size() != indexPosition)
-            return true;
-
-        this.indexPosition = 0;
-        return false;
+        return index < questions.size();
     }
 
 
     @Override
     public Question next() {
-        return this.rules.get(indexPosition++);
+        return questions.get(this.index++);
     }
 }

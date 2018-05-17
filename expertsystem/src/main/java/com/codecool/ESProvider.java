@@ -1,7 +1,6 @@
 package com.codecool;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class ESProvider {
 
@@ -12,22 +11,41 @@ public class ESProvider {
     public ESProvider(FactParser factParser, RuleParser ruleParser) {
         this.factRepository = factParser.getFactRepository();
         this.ruleRepository = ruleParser.getRuleRepository();
-        this.answers = new HashMap<>();
-
     }
 
 
     public void collectAnswers() {
+        Iterator<Question> questionIterator = ruleRepository.getIterator();
+        Question question;
+        this.answers = new HashMap<>();
 
+        while (questionIterator.hasNext()) {
+            question = questionIterator.next();
+            System.out.println(questionIterator.next().getQuestion());
+
+            String userInput = getUserAnswer();
+            this.answers.put(question.getId(), question.getEvaluatedAnswer(userInput));
+        }
+
+        System.out.println(answers);
     }
 
 
-    public boolean getAnswerByQuestion(String questionId) {
-
+    public String getUserAnswer() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
     }
 
+    public void evaluate() {
+        Iterator<Fact> factIterator = this.factRepository.getIterator();
+        while (factIterator.hasNext()) {
+            Fact fact = factIterator.next();
+            Set<String> factIdsSet = fact.getSetId();
 
-    public String evaluate() {
-
+            for (String id : factIdsSet) {
+                if (this.answers.get(id).equals(fact.getValueById(id)))
+                    System.out.println(fact.getDescription());
+            }
+        }
     }
 }
